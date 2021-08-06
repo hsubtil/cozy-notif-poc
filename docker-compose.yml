@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  stack:
+    image: registry.forge.grandlyon.com/web-et-numerique/llle_project/ecolyo/cozy-env:latest
+    ports:
+      - 8080:8080
+      - 5984:5984
+      - 8025:8025
+    volumes:
+      - ./build:/data/cozy-app/mycozyapp
+      - ./data:/usr/local/couchdb/data
+      - ./docker/disableCSP.yaml:/etc/cozy/cozy.yaml

@@ -1,0 +1,20 @@
+{{#extend "cozy-layout"}}
+  {{#content "logoUrl"}}https://ecolyo.com/assets/ecolyo-icon.svg{{/content}}
+
+  {{#content "appName"}}
+    Banks
+  {{/content}}
+
+  {{#content "topLogo"}}<mj-image width="100px" src="https://ecolyo.com/assets/ecolyo-icon.svg" />{{/content}}
+
+  {{#content "appURL"}}{{ ecolyoUrl }}{{/content}}
+
+  {{#content "footerHelp"}}
+    <a css-class="footer__help" href="{{ settingsUrl }}">
+      {{tGlobal 'settings'}}
+    </a>
+    <a css-class="footer__help" href="https://support.cozy.io/">
+      {{tGlobal 'support'}}
+    </a>
+  {{/content}}
+{{/extend}}
