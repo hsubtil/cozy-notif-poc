@@ -1,32 +1,18 @@
-
 {{#extend "app-layout"}}
   {{#content "emailTitle"}}
-    Du nouveau dans votre espace Ecolyo !
+    A notification from My App !
   {{/content}}
+
   {{#content "emailSubtitle"}}
-    Subtitle test
+    You should read this :)
   {{/content}}
 
   {{#content "content"}}
-    <mj-section css-class="account" padding-top="0" padding-bottom="10px">
-      <mj-column>
-        <mj-text padding-top="0" padding-bottom="0">
-          Bonjour {{ username }},
-        </mj-text>
-        <mj-text>
-          Le bilan de vos consomations du mois dernier est prêt !
-        </mj-text>
-        <mj-text>
-          Retrouvez-le dans le menu Analyse du service.
-        </mj-text>
-      </mj-column>
-    </mj-section>
     <mj-section>
-      <mj-column>
-        <mj-text>
-          <a href="{{ analysisUrl }}">Voir mon bilan</a>
-        </mj-text>
-      </mj-column>
+    {{ greeting name }},
+
+    Just to tell you that My App is awesome !
     </mj-section>
   {{/content}}
+
 {{/extend}}
